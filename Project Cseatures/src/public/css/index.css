@@ -1,0 +1,262 @@
+#gameMain {
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0px;
+  position: relative;
+}
+
+.leader-board {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 300px;
+  height: 300px;
+  background-color: grey;
+}
+
+.leader-board-title {
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: lightgray;
+}
+
+.leader-board-content {
+  margin-top: -10px;
+}
+
+.leader-board-entry-inner {
+  display: flex;
+}
+
+.leader-board-entry-position, .leader-board-entry-name, .leader-board-entry-score {
+  flex: 1;
+  display: inline;
+}
+
+.leader-board-entry-name {
+  flex: 2;
+}
+
+.leader-board-entry-position > p, .leader-board-entry-name > p, .leader-board-entry-score > p {
+  margin: 0;
+}
+
+.card-preview {
+  aspect-ratio: 150 / 200;
+  border-radius: 20px;
+}
+
+.card-preview-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-preview-inner:after {
+  border-radius: 20px;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 212, 255, 0) 20%);
+  background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 212, 255, 0) 20%);
+  background-image: -ms-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 212, 255, 0) 20%);
+}
+
+.card-preview-inner {
+  width: 300px;
+  height: 400px;
+  position: relative;
+}
+
+.card-value {
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  margin-bottom: 0px;
+}
+
+.dropdown {
+  margin-top: 20px;
+  width: 172px;
+}
+
+.roll-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#rollButton {
+  width: 300px;
+  border-radius: 10px;
+  background-color: #8E24AA;
+  border: 0;
+  border-bottom: #4A148C 4px solid;
+}
+
+#rollButton:active {
+  background-color: #4A148C;
+  margin-top: 4px;
+  border-bottom: 0;
+}
+
+.toggle-inventory {
+  margin: 10px;
+}
+
+.dropdown-container {
+  position: relative;
+  width: 172px;
+  margin: 0 auto;
+}
+
+.save-button {
+  position: absolute;
+  right: -35px;
+  top: 0px;
+  height: 38px;
+  width: 42px;
+  background-color: #4CAF50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.save-button:hover {
+  background-color: #43a145;
+}
+
+#currProfName {
+  width: 148px;
+}
+
+#inventory-space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inventory-inner {
+  width: 470px;
+}
+
+.inventory-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.rarity-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.rarity-border:nth-child(3n+2) {
+  margin: 0 10px 0 10px;
+}
+
+.card-info-container {
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-info-container-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  background-color: rgb(42, 116, 214);
+  border-bottom: rgb(26, 69, 126) 2px solid;
+  border-radius: 5px;
+}
+
+.card-name {
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+.inventory-card-image {
+  border-radius: 10px;
+}
+
+.Common-border {
+  background-color: #90CAF9;
+}
+
+.Rare-border {
+  background-color: #4CAF50;
+}
+
+.Legendary-border {
+  background-color: #FFEB3B;
+}
+
+.coins-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.coins-inner {
+  width: 75px;
+  height: 50px;
+}
+
+#current-currency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(221, 221, 221);
+  border: rgb(146, 146, 146) 2px solid;
+}
+
+#current-currency > img {
+  margin-right: 5px;
+}
+
+.shimmer {
+  color: grey;
+  display: inline-block;
+  -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 2.5s infinite;
+  font-size: 50px;
+  max-width: 200px;
+}
+
+@keyframes shimmer {
+  100% {
+    -webkit-mask-position: left
+  }
+}
+
+.cost-text {
+  margin-left: 200px;
+}
+
+.cost-text > img {
+  margin-bottom: 3px;
+}

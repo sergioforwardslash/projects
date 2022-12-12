@@ -1,0 +1,9 @@
+{
+  "databaseCredentials": {
+    "host": "localhost",
+    "port": "4202",
+    "user": "root",
+    "password": "password",
+    "database": "MySQL"
+  }
+}
